@@ -15,4 +15,4 @@
   notify:
     - restart dnsmasq
 
-- pause: prompt="Waiting 90 seconds... we hope..." minutes=1
+- pause: prompt="Waiting 20 seconds for dnsmasq service to be ready..." seconds=20
