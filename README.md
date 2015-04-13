@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ansible Consul Role
 
 > `consul` is an [ansible](http://www.ansible.com) role which: 
@@ -129,3 +130,6 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## License
 Copyright (c) Jive Software under the Apache license.
+=======
+# ansible-consul
+>>>>>>> 5037c53ffcc131195248e3f587e14c5c3fb6f05d
