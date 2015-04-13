@@ -1,10 +1,20 @@
 ---
-- name: update apt
-  apt: >
-    update_cache=yes
-    cache_valid_time=3600
+- name: add multiverse
+  sudo: true
+  command: add-apt-repository "deb http://archive.ubuntu.com/ubuntu trusty universe"
 
-- name: install deps
+- name: update apt
+  sudo: true
+  apt: update_cache=yes
+
+- name: install deps unzip and jq
+  sudo: true
+  apt: pkg={{item}}
+  with_items:
+    - unzip
+    - jq
+
+- name: install deps unzip and jq
   apt: >
     pkg={{item}}
     state=installed
